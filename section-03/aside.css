@@ -1,0 +1,13 @@
+h1 {
+	/* Display none removes content entirely */
+	/* display: none */
+	/* Visibility hidden keeps space and flow */
+	/* visibility: hidden */
+	color: blue !important;
+}
+
+.hello {
+	color: red;
+	/* Pull margin up 30 px */
+	margin-top: -30px;
+}
