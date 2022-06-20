@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em & Rem Units</title>
+  <style>
+    #box-1 {
+      font-size: 20px;
+    }
+
+    #box-1 p {
+      /* Set element's point size to 1.5 em (will scale from parent [body]) */
+      font-size: 1.5em;
+      /* Since element has a new point size set, setting 1em here will
+         reference that new value */
+      padding: 1em;
+    }
+
+    #box-1 ul {
+      /* This will set a new point size of 1.2em on this element */
+      /* Every child in this element will now inherit this font size */
+      font-size: 1.2em;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    #box-2 h3 {
+      font-size: 2rem;
+    }
+
+    #box-2 p {
+      font-size: 1.6rem;
+      line-height: 1.7rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="box-1">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quaerat cupiditate quod explicabo ipsa harum reiciendis quasi modi aliquam recusandae.</p>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </li>
+    </ul>
+  </div> 
+  <div id="box-2">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio, corrupti nesciunt voluptatem pariatur magnam unde tenetur id nemo!</p>
+  </div> 
+</body>
+</html>
