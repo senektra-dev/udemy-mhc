@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Align and Justify</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .flex-container {
+      background-color: lightgray;
+      height: 100vh;
+      padding: 0.1rem;
+      display: flex;
+      flex-direction: row;
+      /* Columns with full height */
+      /* align-items: column; */
+      /* Center items on main axis */
+      align-items: center;
+      /* Center items on cross axis */
+      justify-content: center;
+      /* justify-content: space-between */
+    }
+    
+    .item {
+      background: #f1f1f1;
+      border: #ccc solid 2px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      width: 200px;
+      /* flex: 1;  */
+    }
+    
+    .item-1 {
+      align-self: flex-start;
+    }
+    
+    .item-3 {
+      align-self: flex-end;
+    }
+    
+    .item h3 {
+      margin: 1rem 0 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="item item-1">
+      <h3>1</h3>
+    </div>
+    <div class="item item-2">
+      <h3>2</h3>
+    </div>
+    <div class="item item-3">
+      <h3>3</h3>
+    </div>
+  </div>  
+</body>
+</html>
