@@ -1,0 +1,121 @@
+/* Text Modifiers */
+
+.text-primary {
+  color: rgb(52, 255, 154);
+}
+
+.text-secondary {
+  color: rgb(63, 170, 117);
+}
+
+/* End Text */
+
+/* Container Modifiers */
+
+.bg-light {
+  background: white;
+  color: rgb(63, 170, 117);
+}
+
+.bg-normal {
+  background: rgb(63, 170, 117);
+  color: white;
+}
+
+/* End Container */
+
+/* Button */
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+
+.btn i {
+  font-size: 0.8rem;
+}
+
+.btn:hover {
+  opacity: 0.8
+}
+
+/* End Button */
+
+/* Button Modifiers */
+
+.btn-primary {
+  background-color: rgb(63, 170, 117);
+  color: white;
+}
+
+.btn-secondary {
+  background: white;
+  color:rgb(63, 170, 117);
+  border:rgb(63, 170, 117) 1px solid;
+}
+
+.btn-dark {
+  background: rgb(39, 39, 39);
+  color: white;
+}
+
+/* End Button Modifiers */
+
+/* Flex Items Contaienr */
+
+.flex-items {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-items > div {
+  padding: 15px;
+}
+
+/* End Flex Items Container */
+
+/* Flex Row Container */
+
+.flex-row {
+  display: flex; 
+  max-height: 500px;
+}
+
+.flex-row .flex-column {
+  flex: 1;
+  flex-basis: 50%;
+}
+
+.flex-row .flex-column img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.flex-row .flex-column.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* End Flex Row Container */
+
+/* Key Frames */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* End Key Frames */
