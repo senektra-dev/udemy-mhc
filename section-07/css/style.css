@@ -120,6 +120,16 @@ img {
   padding: 0 30px;
   background-color: #333;
   background: rgba(39, 39, 39, 0.7);
+  opacity: 0;
+}
+
+#header-navbar.away-from-top {
+  animation: fadeIn 0.5s;
+  opacity: 1;
+}
+
+#header-navbar.at-top {
+  animation: fadeOut 0.5s;
 }
 
 #header-navbar h1 i {
