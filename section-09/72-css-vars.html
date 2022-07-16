@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --max-width: 1100px;
+      --primary-color: steelblue;
+      --secondary-color: orange;
+      --light-color: #f4f4f4;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: Arial;
+      line-height: 1.4;
+      background: var(--light-color);
+    }
+    
+    header {
+      background-color: var(--primary-color);
+      border-bottom: 5px var(--secondary-color) solid;
+      color: white;
+    }
+    
+    .container {
+      display: flex;
+      margin: auto;
+      max-width: var(--max-width);
+    }
+    
+    .box {
+      background-color: var(--secondary-color);
+      border-bottom: 5px var(--primary-color) solid;
+      color: white;
+      padding: 1rem;
+      margin: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Variable</h1>
+  </header> 
+  
+  <div class="container">
+    <div class="box box-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil commodi culpa eveniet labore illum illo nemo minus odio doloribus natus!</p>
+    </div>
+    <div class="box box-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil commodi culpa eveniet labore illum illo nemo minus odio doloribus natus!</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadows</title>
+  <style>
+    .container {
+      display: flex;
+    }
+
+    .box {
+      padding: 1rem;
+      margin: 1rem;
+      background: coral;
+      color: #fff;
+      
+      box-shadow: inset -10px -10px 20px teal;
+    }
+    
+    .box:nth-child(2) {
+      box-shadow: -10px -10px 20px teal, 10px 10px 20px red;
+    }
+    
+    .box:nth-child(3) {
+      box-shadow: -10px -10px 20px yellow, 10px 10px 20px red, -20px -20px 20px teal;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h1>hello</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, rem?</p>
+    </div>
+    <div class="box">
+      <h1>world</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, impedit!</p>
+    </div>
+    <div class="box">
+      <h1>!!!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, quia?</p>
+    </div>
+  </div>
+</body>
+</html>
